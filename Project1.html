@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Express Food</title>
+</head>
+<body>
+    <section class="head">
+        <div class="logo">
+            <h3>Food <span>Express</span></h3>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="home" id="home">
+        <div class="text">
+            <h3>Food <span>Express</span></h3>
+            <p>Eat your food just how you like it</p>
+            <a href="#menu" class="button">Explore Now</a>
+        </div>
+        <div class="img">
+            <div class="imgbx">
+                <img src="home.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="men" id="menu">
+        <div class="gambar">
+            <div class="container">
+                <img src="Gb1.jpg" alt="" class="jumbo">
+                <div class="thumbnail">
+                    <img src="Gb1.jpg" alt="" class="thumb">
+                    <img src="Gb2.jpg" alt="" class="thumb">
+                    <img src="Gb3.jpg" alt="" class="thumb">
+                    <img src="Gb4.jpg" alt="" class="thumb">
+                    <img src="Gb5.jpg" alt="" class="thumb">
+                    <img src="Gb6.jpg" alt="" class="thumb">
+                </div>
+            </div>
+        </div>
+        <div class="tittle">
+            <h3>Our <span>Menu</span></h3>
+            <p>Kami memiliki berbagai jenis menu makanan <br> yang dapat anda pilih <br>
+            Silahkan klik tombol dibawah untuk melakukan pemesanan</p>
+            <a href="#order" class="button">Click To Order</a>
+        </div>
+    </section>
+    <section class="order" id="order">
+        <div class="judul">
+            <h3>Order List</h3></div>
+        <div class="datar">
+            <div class="list">
+                <div class="ol">
+                <table>
+                <tr>
+                    <th>Nama Menu</th>
+                    <th>Harga</th>
+                </tr>
+                <tr>
+                    <td>Bakso</td>
+                    <td>Rp15.000</td>
+                </tr>
+                <tr>
+                    <td>Mie Ayam</td>
+                    <td>Rp15.000</td>
+                </tr>
+                <tr>
+                    <td>Milk Shake</td>
+                    <td>Rp20.000</td>
+                </tr>
+                <tr>
+                    <td>Sushi</td>
+                    <td>Rp20.000</td>
+                </tr>
+                </table>
+                </div>
+            </div>
+            <div class="pesan">
+                <form name="kirim" method=get action="">
+                <table>
+                    <tr>
+                        <td><label for="T1">Nama Menu</label></td>
+                        <td><input type="text" name="T1" size="50"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="T3">Jumlah</label></td>
+                        <td><input type="text" name="T3" size="50"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="T2">Total Pembelian Anda</label></td>
+                        <td><input type="text" name="T2" size="50"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="Total" name="B1" onclick=test()></td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+        </div>
+        <div class="tombol">
+            <button id="hide">Sembunyikan Menu</button>
+            <button id="show">Tampilkan Menu</button>
+        </div>
+    </section>
+    <script src="style.js"></script>
+    <script src="jquery360.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("#hide").click(function(){
+            $("table").hide(1000);
+          });
+          $("#show").click(function(){
+            $("table").show(1000);
+          });
+        });
+    </script>
+</body>
+</html>

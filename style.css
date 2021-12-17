@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poopins' , sans-serif;
+    scroll-behavior: smooth;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    z-index: 1000;
+}
+.head .logo{
+    margin-left: 20px;
+}
+.head .logo h3{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+}
+.head .logo span{
+    color: red;
+}
+.head .menu{
+    margin-right: 20px;
+}
+.head .menu ul{
+    list-style: none;
+}
+.head .menu ul li{
+    float: left;
+}
+.head .menu ul li a{
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    color: #ffffff;
+}
+.head .menu li a:hover{
+    color:#ff0157 ;
+}
+/*body home */
+
+.home{
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    background-color: #000000;
+    width: 100%;
+    align-items: center;
+}
+.home .text{
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+}
+.home .text h3{
+    color: #ffffff;
+    font-size: 3em;
+}
+.home .text span{
+    color: red;
+}
+.home .text p{
+    color: #ffffff;
+}
+.button{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    font-weight: 800;
+}
+.button:hover{
+    letter-spacing: 6px;
+}
+/*image*/
+.home .img{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.home .img .imgbx{
+    position: relative;
+    width: 100%;
+    height: 340px;
+}
+.home .img .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;}
+/*bagian menu tulisan */
+.men .tittle{
+    width: 600px;
+    align-items: center;
+    text-align: center;
+}
+.men .tittle h3{
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-size: 3em;
+}
+.men .tittle span{
+    color: #ff0157;
+}
+.men .tittle p{
+    font-size: 1.2em;
+    color: #ffffff;
+}
+/*bagian menu  gambar*/
+.men{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000;
+    align-items: center;
+}
+.men .gambar .container .jumbo{
+    height: 310px;
+    width: 600px;
+}
+.men .gambar .container{
+    width: 600px;
+    line-height: 0;
+    overflow: auto;
+}
+.men .gambar .container .thumbnail .thumb{
+    width: 200px;
+    float: left;
+    border: 2px solid #ffffff;
+    box-sizing: border-box;
+}
+.men .gambar .container .thumbnail .thumb:hover{
+    opacity: 0.5;
+    cursor: p;
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+    }
+}
+.fade{
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+.active{
+    opacity: 0.5;
+}
+/*orderr*/
+
+
+
+.order{
+    background: url(Gb7.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000000;
+    align-items: center;
+    justify-content: center;
+}
+.order .datar{
+    display: flex;
+}
+.order .datar .list{
+    width: 50%;
+    align-items: center;
+}
+.order h3  {
+    color: #ffffff;
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+.order .datar .list table {
+    border-collapse: collapse;
+    background-color: #000000;
+    width: 100%;
+}
+.order .datar .list th, td {
+    text-align: left;
+    padding: 8px;
+    color: #ffffff;
+  }
+.order .datar .list tr:nth-child(even) {
+    background-color: #696969;
+}
+button{
+    margin-top: 40px;
+    background-color: #ff0157;
+    height: 50px;
+    width: 150px;
+    font-weight: 600;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.order .datar .pesan{
+    width: 50%;
+    align-items: center;
+    display: flex;
+}
+.order .datar .pesan input{
+    height: 30px;
+}
+.order .datar .btn{
+    width: 150px;
+    height: 90px;
+    background-color: yellow;
+    border: none;
+}
+.order .datar .btn:hover{
+    cursor: pointer;
+}
